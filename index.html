@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homework-3.3</title>
+  </head>
+  <body>
+    <script>
+      let number = prompt("Введіть п'ятизначне число:");
+
+      if (number.length === 5 && !isNaN(number)) {
+        // Розкладка числа на цифри та об'єднання в рядок через пробіл
+        let digits = number.split("").join(" ");
+        console.log(digits); // Виведення цифр у консоль
+      } else {
+        console.log("Будь ласка, введіть коректне п'ятизначне число.");
+      }
+
+      /*Пояснення дя себе : 
+        .split() - це метод рядків в JavaScript, який розділяє рядок на масив підрядків на основі 
+      заданого роздільника (separator). Якщо separator не вказано, рядок буде розділено на окремі символи.
+        .join() -  Це метод масивів в JavaScript, який об'єднує всі елементи масиву в рядок, використовуючи заданий роздільник (separator). 
+        Якщо separator не вказано, за замовчуванням використовується кома.
+      */
+    </script>
+  </body>
+</html>
